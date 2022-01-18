@@ -11,7 +11,7 @@ mmsProb0 <- function(lambda, mu, capacity){
     
     if(rho < 1){
       
-      d1 <- sum(sapply(1:(capacity-1),function(n){
+      d1 <- sum(sapply(0:(capacity-1),function(n){
         
         (lambda/mu)^n / factorial(n)
         
